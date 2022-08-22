@@ -1,0 +1,14 @@
+.container {
+  width: 750px;
+  height: 750px;
+  display: grid;
+  border: 1px solid black;
+}
+
+#color-picker {
+  border: none;
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+}
