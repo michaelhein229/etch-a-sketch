@@ -4,11 +4,19 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <script src="etch-a-sketch.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <p>Etch a Sketch</p>
-    <label for="color-picker">Select your color:</label>
-    <input id="color-picker" type="color">
+    <p class = "title">Etch a Sketch</p>
+    <div id="user-inputs">
+      <label for="dimensions">Adjust grid size:</label>
+      <input type="range" min="1" max="100" id="dimensions">
+      <label for="color-picker">Select your color:</label>
+      <input id="color-picker" type="color">
+    </div> 
+    
     <button>hover</button>
     <button>click</button>
     <button>fill</button>

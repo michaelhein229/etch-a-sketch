@@ -1,8 +1,21 @@
+body {
+  background-color: rgba(181,13,26,255)
+}
+
+p {
+  font-family: 'Qwitcher Grypen';
+  color: gold;
+  font-size: 100px;
+}
+
+.title {
+  text-align: center;
+}
+
 .container {
   width: 750px;
   height: 750px;
   display: grid;
-  border: 1px solid black;
 }
 
 #color-picker {
