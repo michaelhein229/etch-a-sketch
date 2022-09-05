@@ -1,11 +1,29 @@
 body {
-  background-color: rgba(181,13,26,255)
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 25px;
 }
+
+#etch-a-sketch {
+  background-color: rgba(181,13,26,255);
+  display: flex;
+  width: 1000px;
+  height: 1000px;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px;
+  border-radius: 10px;
+}
+
 
 p {
   font-family: 'Qwitcher Grypen';
   color: gold;
   font-size: 100px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .title {
