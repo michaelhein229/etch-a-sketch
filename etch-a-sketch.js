@@ -23,13 +23,13 @@ let container = document.querySelector(".container");
 let slider = document.getElementById("dimensions");
 let sliderValue = document.getElementById("number");
 let gridSize = 16;
-slider.value = gridSize;
+slider.value = 16;
 renderGrid(gridSize);
 
 
 slider.addEventListener("input", function() {
   gridSize = slider.value;
-  sliderValue.innerText = gridSize;
+  sliderValue.innerText = `${gridSize}x${gridSize}`;
   renderGrid(gridSize);
 })
 
