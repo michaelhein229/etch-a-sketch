@@ -4,6 +4,19 @@ body {
   justify-content: center;
   background-color: white;
   padding: 25px;
+  
+}
+
+.border {
+  position:fixed;
+  top:0;
+  bottom: 0;
+  background-color: black;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 #etch-a-sketch {
@@ -15,8 +28,39 @@ body {
   align-items: center;
   padding: 50px 0px;
   border-radius: 10px;
+  box-shadow: 10px 10px 100px black;
 }
 
+#number {
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sidebar {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 25px;
+  justify-content: space-around;
+  background-color: lightgray;
+}
+
+button {
+  background-color: black;
+  color: gold;
+  border-radius: 10px;  
+  border: none;
+  padding: 2px 5px;
+  box-shadow: 20px 20px 50px gray;
+  width: 100px;
+}
 
 p {
   font-family: 'Qwitcher Grypen';
@@ -42,4 +86,44 @@ p {
   width: 25px;
   height: 25px;
   border-radius: 50px;
+}
+
+.right, .left {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.bottom-etch {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  justify-content: space-between;
+  width: 900px;
+}
+
+#user-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#etch-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 800px;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+
+.non-title {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  color: gold;
 }

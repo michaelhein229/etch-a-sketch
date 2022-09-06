@@ -4,6 +4,7 @@ let squareList = [];
    to change its background color on hover                */
    class Square {
     constructor(color) {
+      this.filled = false;
       this.color = color;
       this.square = document.createElement("div");
       const square = this.square
@@ -12,13 +13,16 @@ let squareList = [];
   
       square.addEventListener("mouseover", function() {
         square.style.backgroundColor = color2;
-      }) 
+        console.log(color2);
+        colorCounter++
+      })
       
-      squareList.push(this.square);
+      squareList.push(this.square); 
     }
   }
 
 
+let colorCounter = 0;
 let container = document.querySelector(".container");
 let slider = document.getElementById("dimensions");
 let sliderValue = document.getElementById("number");
@@ -54,19 +58,47 @@ for (let i = 0; i < gridSize; i++) {
 
 
 //Button functions
+function hover() {
+  color2 = colorPicker.value;
+  colorStyle = "solid"
+}
+
+
+
 
 function erase() {
-  console.log("cleared!")
-  renderGrid(gridSize);
-  
+  colorStyle = "erase"
+  color2 = "white"
 }
 
 function clearSquares() {
   console.log("cleared!")
   renderGrid(gridSize);
+  color2 = colorPicker.value;
+  colorCounter = 0;
 }
 
+
+/* function rainbow() {
+  colorStyle = "rainbow";
+  while (colorStyle == "rainbow") {
+    let currentCount = colorCounter;
+    if (colorCounter % currentCount == 0) {
+      color2 = "red"
+      colorCounter += 1;
+      console.log(colorCounter % currentCount);
+      }
+    if (colorCounter = currentCount + 1) {
+      color2 = "blue"
+    }
+    break
+  }
+  rainbow();
+} */
+
 function fill() {
+  colorStyle = "fill"
+  color2 = colorPicker.value;
   squareList.forEach(function(square){
     square.style.backgroundColor = color2;
   })

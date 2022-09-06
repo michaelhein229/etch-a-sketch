@@ -9,26 +9,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="etch-a-sketch">
-      <p class = "title">Etch a Sketch</p>
-      <div id="user-inputs">
-        <label for="color-picker">Select your color:</label>
-        <input id="color-picker" type="color">
-      
-        <div>
-          <label for="dimensions">Adjust grid size:</label>
-          <input type="range" min="1" max="100" id="dimensions">
-          <div id="number">16x16</div>
+        <div class = "sidebar">
+          <div id="user-inputs">
+            <label for="color-picker">Select your color:</label>
+            <input id="color-picker" type="color">
+          
+            <div>
+              <label for="dimensions">Adjust grid size:</label>
+              <input type="range" min="1" max="100" id="dimensions">
+              <div id="number">16x16</div>
+            </div>
+          </div>
+          
+          <button id="hover" onclick="hover()">hover</button>
+          <button>click</button>
+          <button id="fill" onclick="fill()">fill</button>
+          <button id="rainbow">rainbow</button>
+          <button id="eraser" onclick="erase()">erase</button>
+          <button id="clear" onclick= "clearSquares()">clear</button>
         </div>
-        <button>hover</button>
-        <button>click</button>
-        <button id="fill" onclick="fill()">fill</button>
-        <button>rainbow</button>
-        <button id="eraser" onclick="erase()">erase</button>
-        <button id = "clear" onclick= "clearSquares()">clear</button>
-        <div class="container"></div>
+  
+        <div id="etch-a-sketch">
+          <div id="etch-top">
+            <p class="non-title">Magic</p>
+            <p class="title">Etch a Sketch</p>
+            <p class="non-title">Screen</p>
+          </div>
+          
+            <div class="container"></div>
+            <div class="bottom-etch">
+              <div class="left">
+  
+              </div>
+              <div class="right">
+  
+              </div>
+            </div>
         </div> 
-    </div> 
+      </div>
+  
+    
+    
 
     
     
